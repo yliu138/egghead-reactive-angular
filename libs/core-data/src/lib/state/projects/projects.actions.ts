@@ -5,6 +5,7 @@ import { Action } from "@ngrx/store";
 // this could act as constants
 export enum ProjectsActionTypes {
   ProjectSelected = '[Projects] Selected',
+  LoadProjects = '[Projects] Load Data',
   AddProject = '[Projects] Add Data',
   UpdateProject = '[Projects] Update Data',
   DeleteProject = '[Projects] Delete Data'
@@ -19,6 +20,10 @@ export class SelectProject implements Action {
   }
 }
 
+export class LoadProjects implements Action {
+  readonly type = ProjectsActionTypes.LoadProjects
+  constructor(private payload: Project[]) {}
+}
 
 export class AddProject implements Action {
   readonly type = ProjectsActionTypes.AddProject;
@@ -48,6 +53,7 @@ export class DeleteProject implements Action {
 // create custom type
 // Convenient way to export all these projects
 export type ProjectsActions = SelectProject
+| LoadProjects
 | AddProject
 | DeleteProject
 | UpdateProject

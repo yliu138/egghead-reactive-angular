@@ -28,6 +28,8 @@ export class ProjectsComponent implements OnInit {
     private customerService: CustomersService,
     private store: Store<ProjectsState>,
     private ns: NotificationsService) {
+      // set our observable stream to the initial data we define in the reducer
+      // it is just like connect in react redux for providing the state data to the UI/component in anuglar context
       this.projects$ = store.pipe(
         select('projects'),
         map((projectsState: ProjectsState) => projectsState.projects)

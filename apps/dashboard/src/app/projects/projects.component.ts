@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Customer, Project, ProjectsService, NotificationsService, CustomersService, ProjectsState } from '@workshop/core-data';
-import { ProjectsActionTypes, AddProject, UpdateProject, DeleteProject } from 'libs/core-data/src/lib/state/projects/projects.actions';
+import { ProjectsActionTypes, AddProject, UpdateProject, DeleteProject } from '@workshop/core-data';
 
 const emptyProject: Project = {
   id: null,

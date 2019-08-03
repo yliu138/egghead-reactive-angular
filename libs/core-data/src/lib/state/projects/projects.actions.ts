@@ -1,5 +1,5 @@
-import { Action } from "rxjs/internal/scheduler/Action";
 import { Project } from "../../projects/project.model";
+import { Action } from "@ngrx/store";
 
 // 01 define our possible action types
 // this could act as constants

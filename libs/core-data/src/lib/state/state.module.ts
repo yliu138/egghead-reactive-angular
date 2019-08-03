@@ -13,7 +13,8 @@ import { CustomersEffects } from './customers/customers.effects';
     CommonModule,
     NxModule.forRoot(),
     StoreModule.forRoot(reducers),
-    StoreDevtoolsModule.instrument({ maxAge: 10 }),
+    // The maxAge config is optional and helps limit the amount of actions kept in the DevTools.
+    StoreDevtoolsModule.instrument({ maxAge: 10 }), //you can see the redux tab
     EffectsModule.forRoot([
       CustomersEffects
     ]),

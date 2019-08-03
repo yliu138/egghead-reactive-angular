@@ -2,7 +2,7 @@ import { map } from 'rxjs/operators';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { Customer, Project, ProjectsService, NotificationsService, CustomersService, ProjectsState, LoadProjects, initialProjects } from '@workshop/core-data';
+import { Customer, Project, ProjectsService, NotificationsService, CustomersService, ProjectsState, LoadProjects, initialProjects, selectAllProjects } from '@workshop/core-data';
 import { ProjectsActionTypes, AddProject, UpdateProject, DeleteProject } from '@workshop/core-data';
 
 const emptyProject: Project = {
@@ -33,9 +33,9 @@ export class ProjectsComponent implements OnInit {
       // it is just like connect in react redux for providing the state data to the UI/component in anuglar context
       // this corresponds to the AppState projects
       this.projects$ = store.pipe(
-        select('projects'),
-        map(data => data.entities),
-        map(data => Object.keys(data).map(k => data[k]))
+        select(selectAllProjects)
+        // map(data => data.entities),
+        // map(data => Object.keys(data).map(k => data[k]))
         // map((projectsState: ProjectsState) => projectsState.projects)
       )
     }

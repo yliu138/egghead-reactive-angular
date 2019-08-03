@@ -14,6 +14,32 @@ export const reducers: ActionReducerMap<AppState> = {
   projects: fromProjects.projectsReducers
 };
 
+
+// -------------------------------------------------------------------
+// PROJECTS SELECTORS
+// -------------------------------------------------------------------
+export const selectProjectsState = createFeatureSelector<fromProjects.ProjectsState>('projects');
+
+// Two parameters:
+// The first one being the entire state for that feature
+// The second: low-level selector from projects.selectProjectIds: i.e. just select IDs
+// the ids
+export const selectProjectIds = createSelector(
+  selectProjectsState,
+  fromProjects.selectProjectIds
+);
+
+// the dict
+export const selectProjectEntities = createSelector(
+  selectProjectsState,
+  fromProjects.selectProjectEntities
+);
+
+export const selectAllProjects = createSelector(
+  selectProjectsState,
+  fromProjects.selectAllProjects
+);
+
 // -------------------------------------------------------------------
 // CUSTOMERS SELECTORS
 // -------------------------------------------------------------------

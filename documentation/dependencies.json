@@ -1,0 +1,2023 @@
+[
+  {
+    "name": "AppRoutingModule",
+    "file": "src/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 465,
+        "end": 507,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 465,
+          "end": 475,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 476,
+          "end": 507,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 478,
+              "end": 506,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 478,
+                "end": 498,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 478,
+                  "end": 490,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 491,
+                  "end": 498,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 499,
+                  "end": 505,
+                  "flags": 0,
+                  "escapedText": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 508,
+        "end": 534,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 508,
+          "end": 518,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 519,
+          "end": 534,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 521,
+              "end": 533,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 535,
+        "end": 551,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 535,
+          "end": 547,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 548,
+          "end": 551,
+          "flags": 0,
+          "kind": 182,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 192,
+            "end": 215,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 192,
+              "end": 203,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 204,
+              "end": 215,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-root"
+            }
+          },
+          {
+            "pos": 216,
+            "end": 254,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 216,
+              "end": 230,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 231,
+              "end": 254,
+              "flags": 0,
+              "kind": 9,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "pos": 255,
+            "end": 293,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 255,
+              "end": 267,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 268,
+              "end": 293,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 270,
+                  "end": 292,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./app.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "AppRoutingModule"
+      },
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "BrowserAnimationsModule"
+      },
+      {
+        "name": "CoreDataModule"
+      },
+      {
+        "name": "HttpClientModule"
+      },
+      {
+        "name": "LayoutModule"
+      },
+      {
+        "ns": "NxModule",
+        "name": "NxModule.forRoot()"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "ReactiveFormsModule"
+      },
+      {
+        "name": "UiLoginModule"
+      },
+      {
+        "name": "UiToolbarModule"
+      },
+      {
+        "name": "MaterialModule"
+      },
+      {
+        "name": "ProjectsModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 789,
+        "end": 828,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 789,
+          "end": 804,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 805,
+          "end": 828,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 807,
+              "end": 824,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 829,
+        "end": 1121,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 829,
+          "end": 839,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 840,
+          "end": 1121,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 842,
+              "end": 863,
+              "flags": 0,
+              "escapedText": "AppRoutingModule"
+            },
+            {
+              "pos": 864,
+              "end": 882,
+              "flags": 0,
+              "escapedText": "BrowserModule"
+            },
+            {
+              "pos": 883,
+              "end": 911,
+              "flags": 0,
+              "escapedText": "BrowserAnimationsModule"
+            },
+            {
+              "pos": 912,
+              "end": 931,
+              "flags": 0,
+              "escapedText": "CoreDataModule"
+            },
+            {
+              "pos": 932,
+              "end": 953,
+              "flags": 0,
+              "escapedText": "HttpClientModule"
+            },
+            {
+              "pos": 954,
+              "end": 971,
+              "flags": 0,
+              "escapedText": "LayoutModule"
+            },
+            {
+              "pos": 972,
+              "end": 995,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 972,
+                "end": 993,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 972,
+                  "end": 985,
+                  "flags": 0,
+                  "escapedText": "NxModule"
+                },
+                "name": {
+                  "pos": 986,
+                  "end": 993,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "pos": 996,
+              "end": 1012,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 1013,
+              "end": 1037,
+              "flags": 0,
+              "escapedText": "ReactiveFormsModule"
+            },
+            {
+              "pos": 1038,
+              "end": 1056,
+              "flags": 0,
+              "escapedText": "UiLoginModule"
+            },
+            {
+              "pos": 1057,
+              "end": 1077,
+              "flags": 0,
+              "escapedText": "UiToolbarModule"
+            },
+            {
+              "pos": 1078,
+              "end": 1097,
+              "flags": 0,
+              "escapedText": "MaterialModule"
+            },
+            {
+              "pos": 1098,
+              "end": 1117,
+              "flags": 0,
+              "escapedText": "ProjectsModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1122,
+        "end": 1138,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1122,
+          "end": 1134,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 1135,
+          "end": 1138,
+          "flags": 0,
+          "kind": 182,
+          "elements": []
+        }
+      },
+      {
+        "pos": 1139,
+        "end": 1167,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1139,
+          "end": 1151,
+          "flags": 0,
+          "escapedText": "bootstrap"
+        },
+        "initializer": {
+          "pos": 1152,
+          "end": 1167,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1154,
+              "end": 1166,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "ProjectsModule",
+    "file": "app/projects/projects.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "ProjectsComponent",
+        "file": "app/projects/projects.component.ts",
+        "selector": "app-projects",
+        "providers": [],
+        "templateUrl": [
+          "projects.component.html"
+        ],
+        "styleUrls": [
+          "projects.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 582,
+            "end": 609,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 582,
+              "end": 593,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 594,
+              "end": 609,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-projects"
+            }
+          },
+          {
+            "pos": 610,
+            "end": 653,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 610,
+              "end": 624,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 625,
+              "end": 653,
+              "flags": 0,
+              "kind": 9,
+              "text": "./projects.component.html"
+            }
+          },
+          {
+            "pos": 654,
+            "end": 697,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 654,
+              "end": 666,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 667,
+              "end": 697,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 669,
+                  "end": 696,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./projects.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectsListComponent",
+        "file": "projects/projects-list/projects-list.component.ts",
+        "selector": "app-projects-list",
+        "providers": [],
+        "templateUrl": [
+          "projects-list.component.html"
+        ],
+        "styleUrls": [
+          "projects-list.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 202,
+            "end": 234,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 202,
+              "end": 213,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 214,
+              "end": 234,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-projects-list"
+            }
+          },
+          {
+            "pos": 235,
+            "end": 283,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 235,
+              "end": 249,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 250,
+              "end": 283,
+              "flags": 0,
+              "kind": 9,
+              "text": "./projects-list.component.html"
+            }
+          },
+          {
+            "pos": 284,
+            "end": 332,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 284,
+              "end": 296,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 297,
+              "end": 332,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 299,
+                  "end": 331,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./projects-list.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "pos": 333,
+            "end": 364,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 333,
+              "end": 346,
+              "flags": 0,
+              "escapedText": "animations"
+            },
+            "initializer": {
+              "pos": 347,
+              "end": 364,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 349,
+                  "end": 363,
+                  "flags": 0,
+                  "escapedText": "LIST_ANIMATION"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectDetailsComponent",
+        "file": "projects/project-details/project-details.component.ts",
+        "selector": "app-project-details",
+        "providers": [],
+        "templateUrl": [
+          "project-details.component.html"
+        ],
+        "styleUrls": [
+          "project-details.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 142,
+            "end": 176,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 142,
+              "end": 153,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 154,
+              "end": 176,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-project-details"
+            }
+          },
+          {
+            "pos": 177,
+            "end": 227,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 177,
+              "end": 191,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 192,
+              "end": 227,
+              "flags": 0,
+              "kind": 9,
+              "text": "./project-details.component.html"
+            }
+          },
+          {
+            "pos": 228,
+            "end": 278,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 228,
+              "end": 240,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 241,
+              "end": 278,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 243,
+                  "end": 277,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./project-details.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "MaterialModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "CoreDataModule"
+      }
+    ],
+    "exports": [
+      {
+        "name": "ProjectsComponent"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 482,
+        "end": 574,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 482,
+          "end": 492,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 493,
+          "end": 574,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 495,
+              "end": 512,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 513,
+              "end": 532,
+              "flags": 0,
+              "escapedText": "MaterialModule"
+            },
+            {
+              "pos": 533,
+              "end": 549,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 550,
+              "end": 569,
+              "flags": 0,
+              "escapedText": "CoreDataModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 575,
+        "end": 676,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 575,
+          "end": 590,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 591,
+          "end": 676,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 593,
+              "end": 615,
+              "flags": 0,
+              "escapedText": "ProjectsComponent"
+            },
+            {
+              "pos": 616,
+              "end": 642,
+              "flags": 0,
+              "escapedText": "ProjectsListComponent"
+            },
+            {
+              "pos": 643,
+              "end": 671,
+              "flags": 0,
+              "escapedText": "ProjectDetailsComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 677,
+        "end": 717,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 677,
+          "end": 687,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 688,
+          "end": 717,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 690,
+              "end": 712,
+              "flags": 0,
+              "escapedText": "ProjectsComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "CoreDataModule",
+    "file": "src/lib/core-data.module.ts",
+    "providers": [
+      {
+        "name": "AuthService"
+      },
+      {
+        "name": "AuthGuardService"
+      },
+      {
+        "name": "NotificationsService"
+      },
+      {
+        "name": "CustomersService"
+      },
+      {
+        "name": "ProjectsService"
+      }
+    ],
+    "declarations": [],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "HttpClientModule"
+      },
+      {
+        "name": "StateModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 532,
+        "end": 658,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 532,
+          "end": 544,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 545,
+          "end": 658,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 547,
+              "end": 563,
+              "flags": 0,
+              "escapedText": "AuthService"
+            },
+            {
+              "pos": 564,
+              "end": 585,
+              "flags": 0,
+              "escapedText": "AuthGuardService"
+            },
+            {
+              "pos": 586,
+              "end": 611,
+              "flags": 0,
+              "escapedText": "NotificationsService"
+            },
+            {
+              "pos": 612,
+              "end": 633,
+              "flags": 0,
+              "escapedText": "CustomersService"
+            },
+            {
+              "pos": 634,
+              "end": 654,
+              "flags": 0,
+              "escapedText": "ProjectsService"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 659,
+        "end": 716,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 659,
+          "end": 669,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 670,
+          "end": 716,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 672,
+              "end": 684,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 685,
+              "end": 702,
+              "flags": 0,
+              "escapedText": "HttpClientModule"
+            },
+            {
+              "pos": 703,
+              "end": 715,
+              "flags": 0,
+              "escapedText": "StateModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "StateModule",
+    "file": "lib/state/state.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "ns": "NxModule",
+        "name": "NxModule.forRoot()"
+      },
+      {
+        "ns": "StoreModule",
+        "name": "StoreModule.forRoot(args)"
+      },
+      {
+        "ns": "StoreDevtoolsModule",
+        "name": "StoreDevtoolsModule.instrument(args)"
+      },
+      {
+        "ns": "EffectsModule",
+        "name": "EffectsModule.forRoot(args)"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 386,
+        "end": 716,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 386,
+          "end": 396,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 397,
+          "end": 716,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 399,
+              "end": 416,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 417,
+              "end": 440,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 417,
+                "end": 438,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 417,
+                  "end": 430,
+                  "flags": 0,
+                  "escapedText": "NxModule"
+                },
+                "name": {
+                  "pos": 431,
+                  "end": 438,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "pos": 441,
+              "end": 475,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 441,
+                "end": 465,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 441,
+                  "end": 457,
+                  "flags": 0,
+                  "escapedText": "StoreModule"
+                },
+                "name": {
+                  "pos": 458,
+                  "end": 465,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 466,
+                  "end": 474,
+                  "flags": 0,
+                  "escapedText": "reducers"
+                }
+              ]
+            },
+            {
+              "pos": 476,
+              "end": 624,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 476,
+                "end": 608,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 476,
+                  "end": 597,
+                  "flags": 0,
+                  "escapedText": "StoreDevtoolsModule"
+                },
+                "name": {
+                  "pos": 598,
+                  "end": 608,
+                  "flags": 0,
+                  "escapedText": "instrument"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 609,
+                  "end": 623,
+                  "flags": 0,
+                  "kind": 183,
+                  "properties": [
+                    {
+                      "pos": 610,
+                      "end": 621,
+                      "flags": 0,
+                      "kind": 269,
+                      "name": {
+                        "pos": 610,
+                        "end": 617,
+                        "flags": 0,
+                        "escapedText": "maxAge"
+                      },
+                      "initializer": {
+                        "pos": 618,
+                        "end": 621,
+                        "flags": 0,
+                        "kind": 8,
+                        "text": "10",
+                        "numericLiteralFlags": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "pos": 625,
+              "end": 711,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 625,
+                "end": 679,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 625,
+                  "end": 671,
+                  "flags": 0,
+                  "escapedText": "EffectsModule"
+                },
+                "name": {
+                  "pos": 672,
+                  "end": 679,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 680,
+                  "end": 710,
+                  "flags": 0,
+                  "kind": 182,
+                  "multiLine": true,
+                  "elements": [
+                    {
+                      "pos": 681,
+                      "end": 704,
+                      "flags": 0,
+                      "escapedText": "CustomersEffects"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 717,
+        "end": 736,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 717,
+          "end": 732,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 733,
+          "end": 736,
+          "flags": 0,
+          "kind": 182,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "MaterialModule",
+    "file": "src/lib/material.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "name": "MatButtonModule"
+      },
+      {
+        "name": "MatCardModule"
+      },
+      {
+        "name": "MatCheckboxModule"
+      },
+      {
+        "name": "MatFormFieldModule"
+      },
+      {
+        "name": "MatGridListModule"
+      },
+      {
+        "name": "MatIconModule"
+      },
+      {
+        "name": "MatInputModule"
+      },
+      {
+        "name": "MatListModule"
+      },
+      {
+        "name": "MatMenuModule"
+      },
+      {
+        "name": "MatSelectModule"
+      },
+      {
+        "name": "MatSidenavModule"
+      },
+      {
+        "name": "MatSliderModule"
+      },
+      {
+        "name": "MatSnackBarModule"
+      },
+      {
+        "name": "MatTableModule"
+      },
+      {
+        "name": "MatToolbarModule"
+      },
+      {
+        "name": "MatButtonToggleModule"
+      }
+    ],
+    "exports": [
+      {
+        "name": "MatButtonModule"
+      },
+      {
+        "name": "MatCardModule"
+      },
+      {
+        "name": "MatCheckboxModule"
+      },
+      {
+        "name": "MatFormFieldModule"
+      },
+      {
+        "name": "MatGridListModule"
+      },
+      {
+        "name": "MatIconModule"
+      },
+      {
+        "name": "MatInputModule"
+      },
+      {
+        "name": "MatListModule"
+      },
+      {
+        "name": "MatMenuModule"
+      },
+      {
+        "name": "MatSelectModule"
+      },
+      {
+        "name": "MatSidenavModule"
+      },
+      {
+        "name": "MatSliderModule"
+      },
+      {
+        "name": "MatSnackBarModule"
+      },
+      {
+        "name": "MatTableModule"
+      },
+      {
+        "name": "MatToolbarModule"
+      },
+      {
+        "name": "MatButtonToggleModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 401,
+        "end": 760,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 401,
+          "end": 411,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 412,
+          "end": 760,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 414,
+              "end": 434,
+              "flags": 0,
+              "escapedText": "MatButtonModule"
+            },
+            {
+              "pos": 435,
+              "end": 453,
+              "flags": 0,
+              "escapedText": "MatCardModule"
+            },
+            {
+              "pos": 454,
+              "end": 476,
+              "flags": 0,
+              "escapedText": "MatCheckboxModule"
+            },
+            {
+              "pos": 477,
+              "end": 500,
+              "flags": 0,
+              "escapedText": "MatFormFieldModule"
+            },
+            {
+              "pos": 501,
+              "end": 523,
+              "flags": 0,
+              "escapedText": "MatGridListModule"
+            },
+            {
+              "pos": 524,
+              "end": 542,
+              "flags": 0,
+              "escapedText": "MatIconModule"
+            },
+            {
+              "pos": 543,
+              "end": 562,
+              "flags": 0,
+              "escapedText": "MatInputModule"
+            },
+            {
+              "pos": 563,
+              "end": 581,
+              "flags": 0,
+              "escapedText": "MatListModule"
+            },
+            {
+              "pos": 582,
+              "end": 600,
+              "flags": 0,
+              "escapedText": "MatMenuModule"
+            },
+            {
+              "pos": 601,
+              "end": 621,
+              "flags": 0,
+              "escapedText": "MatSelectModule"
+            },
+            {
+              "pos": 622,
+              "end": 643,
+              "flags": 0,
+              "escapedText": "MatSidenavModule"
+            },
+            {
+              "pos": 644,
+              "end": 664,
+              "flags": 0,
+              "escapedText": "MatSliderModule"
+            },
+            {
+              "pos": 665,
+              "end": 687,
+              "flags": 0,
+              "escapedText": "MatSnackBarModule"
+            },
+            {
+              "pos": 688,
+              "end": 707,
+              "flags": 0,
+              "escapedText": "MatTableModule"
+            },
+            {
+              "pos": 708,
+              "end": 729,
+              "flags": 0,
+              "escapedText": "MatToolbarModule"
+            },
+            {
+              "pos": 730,
+              "end": 756,
+              "flags": 0,
+              "escapedText": "MatButtonToggleModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 761,
+        "end": 1120,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 761,
+          "end": 771,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 772,
+          "end": 1120,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 774,
+              "end": 794,
+              "flags": 0,
+              "escapedText": "MatButtonModule"
+            },
+            {
+              "pos": 795,
+              "end": 813,
+              "flags": 0,
+              "escapedText": "MatCardModule"
+            },
+            {
+              "pos": 814,
+              "end": 836,
+              "flags": 0,
+              "escapedText": "MatCheckboxModule"
+            },
+            {
+              "pos": 837,
+              "end": 860,
+              "flags": 0,
+              "escapedText": "MatFormFieldModule"
+            },
+            {
+              "pos": 861,
+              "end": 883,
+              "flags": 0,
+              "escapedText": "MatGridListModule"
+            },
+            {
+              "pos": 884,
+              "end": 902,
+              "flags": 0,
+              "escapedText": "MatIconModule"
+            },
+            {
+              "pos": 903,
+              "end": 922,
+              "flags": 0,
+              "escapedText": "MatInputModule"
+            },
+            {
+              "pos": 923,
+              "end": 941,
+              "flags": 0,
+              "escapedText": "MatListModule"
+            },
+            {
+              "pos": 942,
+              "end": 960,
+              "flags": 0,
+              "escapedText": "MatMenuModule"
+            },
+            {
+              "pos": 961,
+              "end": 981,
+              "flags": 0,
+              "escapedText": "MatSelectModule"
+            },
+            {
+              "pos": 982,
+              "end": 1003,
+              "flags": 0,
+              "escapedText": "MatSidenavModule"
+            },
+            {
+              "pos": 1004,
+              "end": 1024,
+              "flags": 0,
+              "escapedText": "MatSliderModule"
+            },
+            {
+              "pos": 1025,
+              "end": 1047,
+              "flags": 0,
+              "escapedText": "MatSnackBarModule"
+            },
+            {
+              "pos": 1048,
+              "end": 1067,
+              "flags": 0,
+              "escapedText": "MatTableModule"
+            },
+            {
+              "pos": 1068,
+              "end": 1089,
+              "flags": 0,
+              "escapedText": "MatToolbarModule"
+            },
+            {
+              "pos": 1090,
+              "end": 1116,
+              "flags": 0,
+              "escapedText": "MatButtonToggleModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "UiLoginModule",
+    "file": "src/lib/ui-login.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "LoginComponent",
+        "file": "lib/login/login.component.ts",
+        "selector": "ui-login",
+        "providers": [],
+        "templateUrl": [
+          "login.component.html"
+        ],
+        "styleUrls": [
+          "login.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 182,
+            "end": 205,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 182,
+              "end": 193,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 194,
+              "end": 205,
+              "flags": 0,
+              "kind": 9,
+              "text": "ui-login"
+            }
+          },
+          {
+            "pos": 206,
+            "end": 246,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 206,
+              "end": 220,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 221,
+              "end": 246,
+              "flags": 0,
+              "kind": 9,
+              "text": "./login.component.html"
+            }
+          },
+          {
+            "pos": 247,
+            "end": 287,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 247,
+              "end": 259,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 260,
+              "end": 287,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 262,
+                  "end": 286,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./login.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "pos": 288,
+            "end": 338,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 288,
+              "end": 306,
+              "flags": 0,
+              "escapedText": "changeDetection"
+            },
+            "initializer": {
+              "pos": 307,
+              "end": 338,
+              "flags": 0,
+              "kind": 184,
+              "expression": {
+                "pos": 307,
+                "end": 331,
+                "flags": 0,
+                "escapedText": "ChangeDetectionStrategy"
+              },
+              "name": {
+                "pos": 332,
+                "end": 338,
+                "flags": 0,
+                "escapedText": "OnPush"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "MaterialModule"
+      },
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "exports": [
+      {
+        "name": "LoginComponent"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 358,
+        "end": 427,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 358,
+          "end": 368,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 369,
+          "end": 427,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 371,
+              "end": 383,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 384,
+              "end": 396,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 397,
+              "end": 412,
+              "flags": 0,
+              "escapedText": "MaterialModule"
+            },
+            {
+              "pos": 413,
+              "end": 426,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 428,
+        "end": 461,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 428,
+          "end": 443,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 444,
+          "end": 461,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 446,
+              "end": 460,
+              "flags": 0,
+              "escapedText": "LoginComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 462,
+        "end": 498,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 462,
+          "end": 480,
+          "flags": 0,
+          "escapedText": "entryComponents"
+        },
+        "initializer": {
+          "pos": 481,
+          "end": 498,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 483,
+              "end": 497,
+              "flags": 0,
+              "escapedText": "LoginComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 499,
+        "end": 527,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 499,
+          "end": 509,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 510,
+          "end": 527,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 512,
+              "end": 526,
+              "flags": 0,
+              "escapedText": "LoginComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "UiToolbarModule",
+    "file": "src/lib/ui-toolbar.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "ToolbarComponent",
+        "file": "lib/toolbar/toolbar.component.ts",
+        "selector": "ui-toolbar",
+        "providers": [],
+        "templateUrl": [
+          "toolbar.component.html"
+        ],
+        "styleUrls": [
+          "toolbar.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 211,
+            "end": 236,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 211,
+              "end": 222,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 223,
+              "end": 236,
+              "flags": 0,
+              "kind": 9,
+              "text": "ui-toolbar"
+            }
+          },
+          {
+            "pos": 237,
+            "end": 279,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 237,
+              "end": 251,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 252,
+              "end": 279,
+              "flags": 0,
+              "kind": 9,
+              "text": "./toolbar.component.html"
+            }
+          },
+          {
+            "pos": 280,
+            "end": 322,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 280,
+              "end": 292,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 293,
+              "end": 322,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 295,
+                  "end": 321,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./toolbar.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "pos": 323,
+            "end": 373,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 323,
+              "end": 341,
+              "flags": 0,
+              "escapedText": "changeDetection"
+            },
+            "initializer": {
+              "pos": 342,
+              "end": 373,
+              "flags": 0,
+              "kind": 184,
+              "expression": {
+                "pos": 342,
+                "end": 366,
+                "flags": 0,
+                "escapedText": "ChangeDetectionStrategy"
+              },
+              "name": {
+                "pos": 367,
+                "end": 373,
+                "flags": 0,
+                "escapedText": "OnPush"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "MaterialModule"
+      }
+    ],
+    "exports": [
+      {
+        "name": "ToolbarComponent"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 219,
+        "end": 273,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 219,
+          "end": 229,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 230,
+          "end": 273,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 232,
+              "end": 249,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 250,
+              "end": 269,
+              "flags": 0,
+              "escapedText": "MaterialModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 274,
+        "end": 309,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 274,
+          "end": 289,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 290,
+          "end": 309,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 292,
+              "end": 308,
+              "flags": 0,
+              "escapedText": "ToolbarComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 310,
+        "end": 340,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 310,
+          "end": 320,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 321,
+          "end": 340,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 323,
+              "end": 339,
+              "flags": 0,
+              "escapedText": "ToolbarComponent"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

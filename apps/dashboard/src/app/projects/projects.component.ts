@@ -3,6 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Customer, Project, ProjectsService, NotificationsService, CustomersService, ProjectsState } from '@workshop/core-data';
+import { ProjectsActionTypes, AddProject, UpdateProject, DeleteProject } from 'libs/core-data/src/lib/state/projects/projects.actions';
 
 const emptyProject: Project = {
   id: null,
@@ -72,30 +73,22 @@ export class ProjectsComponent implements OnInit {
   }
 
   createProject(project) {
-      this.store.dispatch({
-        type: 'create',
-        payload: project
-      });
+      this.store.dispatch(new AddProject(project));
 
       this.ns.emit('Project created!');
       this.getProjects();
   }
 
   updateProject(project) {
-    this.store.dispatch({
-      type: 'update',
-      payload: project
-    });
+    this.store.dispatch(new UpdateProject(project));
 
       this.ns.emit('Project updated!');
       this.getProjects();
   }
 
+  // we will want strongly typed action objects rather than free style
   deleteProject(project) {
-    this.store.dispatch({
-      type: 'delete',
-      payload: project
-    });
+    this.store.dispatch(new DeleteProject(project));
 
       this.ns.emit('Project deleted!');
       this.getProjects();

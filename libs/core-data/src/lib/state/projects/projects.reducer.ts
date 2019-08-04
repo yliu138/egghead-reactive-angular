@@ -61,13 +61,14 @@ export function projectsReducers(
     switch(action.type) {
       case ProjectsActionTypes.ProjectSelected:
         return Object.assign({}, state, { selectedProjectId: action.payload })
-      case ProjectsActionTypes.LoadProjects:
+      case ProjectsActionTypes.ProjectsLoaded:
         return adapter.addMany(action.payload, state);
       case ProjectsActionTypes.AddProject:
         return adapter.addOne(action.payload, state);
       case ProjectsActionTypes.UpdateProject:
           return adapter.upsertOne(action.payload, state);
       case ProjectsActionTypes.DeleteProject:
+          console.log('Hello world');
           return adapter.removeOne(action.payload, state);
       default:
         return state;

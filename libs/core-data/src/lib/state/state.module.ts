@@ -7,6 +7,7 @@ import { NxModule } from '@nrwl/nx';
 
 import { reducers } from '.';
 import { CustomersEffects } from './customers/customers.effects';
+import { ProjectsEffects } from './projects/projects.effects';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { CustomersEffects } from './customers/customers.effects';
     // The maxAge config is optional and helps limit the amount of actions kept in the DevTools.
     StoreDevtoolsModule.instrument({ maxAge: 10 }), //you can see the redux tab
     EffectsModule.forRoot([
-      CustomersEffects
+      CustomersEffects,
+      ProjectsEffects // middleware, so need to register here
     ]),
   ],
   declarations: []

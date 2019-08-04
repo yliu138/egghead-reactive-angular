@@ -25,7 +25,6 @@ export class ProjectsComponent implements OnInit {
   currentProject: Project;
 
   constructor(
-    private projectsService: ProjectsService,
     private customerService: CustomersService,
     private store: Store<ProjectsState>,
     private ns: NotificationsService) {
@@ -64,7 +63,8 @@ export class ProjectsComponent implements OnInit {
 
   getProjects() {
     // this.projects$ = this.projectsService.all();
-    this.store.dispatch(new LoadProjects(initialProjects));
+    // this action was then dispatched throught the effect lateron
+    this.store.dispatch(new LoadProjects());
   }
 
   saveProject(project) {
@@ -79,14 +79,12 @@ export class ProjectsComponent implements OnInit {
       this.store.dispatch(new AddProject(project));
 
       this.ns.emit('Project created!');
-      this.getProjects();
   }
 
   updateProject(project) {
     this.store.dispatch(new UpdateProject(project));
 
       this.ns.emit('Project updated!');
-      this.getProjects();
   }
 
   // we will want strongly typed action objects rather than free style
@@ -94,7 +92,6 @@ export class ProjectsComponent implements OnInit {
     this.store.dispatch(new DeleteProject(project));
 
       this.ns.emit('Project deleted!');
-      this.getProjects();
   }
 }
 

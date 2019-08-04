@@ -68,7 +68,6 @@ export function projectsReducers(
       case ProjectsActionTypes.UpdateProject:
           return adapter.upsertOne(action.payload, state);
       case ProjectsActionTypes.DeleteProject:
-          console.log('Hello world');
           return adapter.removeOne(action.payload, state);
       default:
         return state;

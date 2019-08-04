@@ -2,6 +2,7 @@ import { ActionReducerMap, createFeatureSelector, createSelector } from '@ngrx/s
 
 import * as fromCustomers from './customers/customers.reducer';
 import * as fromProjects from './projects/projects.reducer';
+import { Project } from '@workshop/core-data';
 
 // Updated the shape of the entire application state
 export interface AppState {
@@ -18,7 +19,8 @@ export const reducers: ActionReducerMap<AppState> = {
 // -------------------------------------------------------------------
 // PROJECTS SELECTORS
 // -------------------------------------------------------------------
-export const selectProjectsState = createFeatureSelector<fromProjects.ProjectsState>('projects');
+export const selectProjectsState
+  = createFeatureSelector<fromProjects.ProjectsState>('projects');
 
 // Two parameters:
 // The first one being the entire state for that feature
@@ -29,11 +31,34 @@ export const selectProjectIds = createSelector(
   fromProjects.selectProjectIds
 );
 
+export const emptyProject: Project = {
+  id: null,
+  title: '',
+  details: '',
+  percentComplete: 0,
+  approved: false,
+  customerId: null
+}
+
+export const selectCurrentProjectId = createSelector(
+  selectProjectsState,
+  fromProjects.getSelectedProjectId
+)
+
+
 // the dict
 export const selectProjectEntities = createSelector(
   selectProjectsState,
   fromProjects.selectProjectEntities
 );
+
+export const selectCurrentProject = createSelector(
+  selectProjectEntities,
+  selectCurrentProjectId,
+  (projectEntities, projectId) => {
+    return projectId ? projectEntities[projectId] : emptyProject;
+  }
+)
 
 export const selectAllProjects = createSelector(
   selectProjectsState,
@@ -50,4 +75,18 @@ export const selectAllCustomers = createSelector(
   fromCustomers.selectAllCustomers
 );
 
+// How to do computated in NGRX
+export const selectCustomersProjects = createSelector(
+  selectAllCustomers,
+  selectAllProjects,
+  (customers, projects) => {
+    return customers.map(customer => {
+      return Object.assign({}, {
+        ...customer,
+        projects: projects.filter(project => project.customerId === customer.id)
+      })
+      // {customer obj, projects; [related customer projects]}
+    })
+  }
+);
 
